@@ -87,4 +87,41 @@ export const Container = styled.div`
     cursor: pointer;
     border: 0;
   }
+
+  > div.progress-bar {
+    position: relative;
+    height: 10px;
+    border-radius: 15px;
+
+    > div.bar {
+      position: absolute;
+      background-color: #F9A826;
+      width: 0px;
+      height: 10px;
+      border-radius: 15px;
+      animation: progress 3s infinite linear;
+
+      @keyframes progress{
+        0%{
+          width: 0%;
+        }
+
+        25%{
+          width: 50%;
+        }
+
+        50%{
+          width: 75%;
+        }
+
+        75%{
+          width: 85%;
+        }
+
+        100%{
+          width: 100%;
+        }
+      }
+    }
+  }
 `;

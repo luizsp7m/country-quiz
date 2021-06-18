@@ -18,6 +18,7 @@ function QuestionCard() {
   const [answerSelected, setAnswerSelected] = useState();
   const [result, setResult] = useState(0);
   const [showResult, setShowResult] = useState(false);
+  const [showProgressBar, setShowProgressBar] = useState(false);
 
   function generateQuestion(country) {
     const questions = [{
@@ -47,24 +48,25 @@ function QuestionCard() {
   }
 
   function checkAnswer(country, index) {
-    setIsAnswered(true);
-    setAnswerSelected(index);
+    if (!isAnswered) {
+      setIsAnswered(true);
+      setAnswerSelected(index);
+      setShowProgressBar(true);
 
-    // console.log(`
-    //   correctIndex: ${correctIndex},
-    //   receivedIndex: ${index}
-    // `);
+      setTimeout(() => {
+        if (country === answer) {
+          handleResult();
+        } else {
+          handleShowResult(true);
+        }
 
-    setTimeout(() => {
-      if (country === answer) {
-        handleResult();
-      } else {
-        handleShowResult(true);
-      }
-
-      setIsAnswered(false);
-      askQuestion();
-    }, 3000);
+        setIsAnswered(false);
+        setShowProgressBar(false);
+        askQuestion();
+      }, 3000);
+    } else {
+      return 0;
+    }
   }
 
   useEffect(() => {
@@ -95,6 +97,10 @@ function QuestionCard() {
                 <label>{country.name}</label>
               </div>
             ))}
+          </div>
+
+          <div className="progress-bar">
+            {showProgressBar && <div className="bar"></div>}
           </div>
         </Fragment>
       )}

@@ -42,5 +42,12 @@ export const Container = styled.div`
     border-radius: .5rem;
     border: 1px solid #1D355D;
     cursor: pointer;
+    transition: all .25s;
+
+    &:hover {
+      color: #fafafa;
+      background-color: #F9A826;
+      border: 1px solid #F9A826;
+    }
   }
 `;
