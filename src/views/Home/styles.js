@@ -13,7 +13,7 @@ export const Container = styled.div`
 `;
 
 export const Wrapper = styled.div`
-
+  position: relative;
 `
 
 export const Title = styled.div`
@@ -22,5 +22,23 @@ export const Title = styled.div`
   font-weight: bold;
   letter-spacing: .15rem;
   margin-bottom: 1rem;
-  font-size: 1.65rem;
+  font-size: 2.5rem;
+`
+
+export const Footer = styled.div`
+  position: relative;
+  top: 2rem;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: #F2F2F2;
+  font-size: 1.25rem;
+
+  > span {
+    > a {
+      font-weight: bold;
+      color: #F2F2F2;
+      font-size: 1.30rem;
+    }
+  }
 `

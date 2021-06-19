@@ -2,31 +2,31 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   background: #fafafa;
-  padding: 3rem 1.55rem;
+  padding: 4rem 2.5rem;
   border-radius: 1rem;
-  width: 25rem;
+  width: 35rem;
   position: relative;
 
   > img {
     position: absolute;
     right: 0;
-    top: -5rem;
+    top: -6rem;
     width: 100%;
-    max-width: 9rem;
+    max-width: 12rem;
     height: auto;
   }
 
   > div.question {
     color: #2F527B;
     font-weight: bold;
-    font-size: 1.45rem;
+    font-size: 2rem;
 
     display: flex;
     flex-direction: column;
 
     > img {
       width: 100%;
-      max-width: 4rem;
+      max-width: 8rem;
       height: auto;
       margin-bottom: 1rem;
     }
@@ -37,10 +37,10 @@ export const Container = styled.div`
       color: #6066D0;
       margin: 1.25rem 0;
       border: 1px solid rgba(96, 102, 208, 0.7);
-      padding: .55rem 1rem;
+      padding: 1rem 2rem;
       border-radius: .5rem;
       font-weight: 500;
-      font-size: 1.15rem;
+      font-size: 1.8rem;
       transition: all .25s;
       white-space: nowrap;
       overflow: hidden;
@@ -92,6 +92,7 @@ export const Container = styled.div`
     position: relative;
     height: 10px;
     border-radius: 15px;
+    margin-top: 3rem;
 
     > div.bar {
       position: absolute;
