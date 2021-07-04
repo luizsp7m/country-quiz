@@ -1,6 +1,6 @@
 # devChallenges - Country Quiz
 
-This is a solution to the [Country quiz ](https://devchallenges.io/challenges/Bu3G2irnaXmfwQ8sZkw8).
+This is a solution to the [Country quiz](https://devchallenges.io/challenges/Bu3G2irnaXmfwQ8sZkw8).
 
 ##### [Site URL](https://country-quiz-delta.vercel.app/) 
 ##### [Solution](https://devchallenges.io/solutions/jEk2gbv1Nw1cr28ssz1l)
