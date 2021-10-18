@@ -26,7 +26,7 @@ function QuestionCard() {
       question: `${country.capital} is the capital of`
     }, {
       type: 'flag',
-      flag: `${country.flag}`,
+      flag: `${country.flags.svg}`,
       question: 'Which country does this flag belong to?  ',
     }];
 
@@ -94,7 +94,7 @@ function QuestionCard() {
                 key={index}
               >
                 <span>{index + 1}.</span>
-                <label>{country.name}</label>
+                <label>{country.name.common}</label>
               </div>
             ))}
           </div>
